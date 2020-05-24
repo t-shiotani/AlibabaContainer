@@ -18,9 +18,7 @@ jobs:
         run: |
           git config --global user.email "sample@example.com"
           git config --global user.name "sample name"
+          touch test
           git add .
           git commit -m 'modify manifests'
           git status
-          with:
-            username: ${{ github.actor }}
-            password: ${{ secrets.GITHUB_TOKEN }}
