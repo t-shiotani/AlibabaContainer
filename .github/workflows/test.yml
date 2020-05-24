@@ -1,6 +1,12 @@
-  pull_request_manifest:
+name: Publish Docker image
+on:
+  release:
+    types: [develop]
+    
+jobs:
+  build:
     runs-on: ubuntu-latest
-    needs: push_to_registry
+    #needs: push_to_registry
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
