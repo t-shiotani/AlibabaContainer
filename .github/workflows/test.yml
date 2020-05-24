@@ -21,4 +21,4 @@ jobs:
           touch test
           git add .
           git commit -m 'modify manifests'
-          git status
+          git push origin master
