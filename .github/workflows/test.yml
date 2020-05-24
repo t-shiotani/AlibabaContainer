@@ -1,4 +1,4 @@
-name: Publish Docker image
+name: test
 on:
   push:
     branches: [ master ]
@@ -15,5 +15,4 @@ jobs:
         with:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-          registry: docker.pkg.github.com
           repository: t-shiotani/alibabamanifest
