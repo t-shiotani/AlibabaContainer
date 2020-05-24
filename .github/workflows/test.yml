@@ -19,3 +19,6 @@ jobs:
           git add .
           git commit -m 'modify manifests'
           git status
+          with:
+            username: ${{ github.actor }}
+            password: ${{ secrets.GITHUB_TOKEN }}
