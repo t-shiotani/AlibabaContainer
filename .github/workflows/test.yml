@@ -16,6 +16,8 @@ jobs:
           repository: t-shiotani/alibabamanifest
       - name: add
         run: |
+          git config --global user.email "sample@example.com"
+          git config --global user.name "sample name"
           git add .
           git commit -m 'modify manifests'
           git status
