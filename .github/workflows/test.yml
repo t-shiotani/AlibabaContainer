@@ -14,3 +14,8 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           repository: t-shiotani/alibabamanifest
+      - name: add
+        run: |
+          git add .
+          git commit -m 'modify manifests'
+          git status
